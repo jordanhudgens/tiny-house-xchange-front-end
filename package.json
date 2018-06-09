@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "postinstall": "npm run build",
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.16.3",
@@ -19,9 +21,5 @@
     "sass-loader": "^7.0.1",
     "vue-template-compiler": "^2.5.16"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ]
+  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"]
 }
