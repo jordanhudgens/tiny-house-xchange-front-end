@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <img src="../assets/logo.png">
-    <HelloWorld msg="Tiny House Xchange" />
+    <HelloWorld msg="Homepage update" />
   </div>
 </template>
 
