@@ -42,7 +42,7 @@ export default {
             password: this.password,
             password_confirmation: this.password_confirmation
           }
-        })
+        }, { withCredentials: true })
         .then(response => {
           console.log('created successfully', response.data);
 
