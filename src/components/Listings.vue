@@ -1,7 +1,12 @@
 <template>
   <div>
     Listings...
-    <ListingCard :listings="getListings()" />
+
+    <div v-if="getListings()">
+      <div v-for="listing in getListings()" :key="listing.id">
+        <ListingCard :name="listing.name" />
+      </div>
+    </div>
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <div>
-    ListingCard
+    {{ name }}
   </div>
 </template>
 
@@ -9,7 +9,7 @@ export default {
   name: 'ListingCard',
 
   props: {
-    listings: Array
+    name: String
   },
 
   mounted() {
