@@ -7,9 +7,13 @@
 <script>
 export default {
   name: 'ListingCard',
-  data() {
-    return {
-    }
+
+  props: {
+    listings: Array
+  },
+
+  mounted() {
+    console.log("in listing card", this.listings)
   }
 }
 </script>

@@ -1,6 +1,7 @@
 <template>
   <div>
     Listings...
+    <ListingCard :listings="getListings()" />
   </div>
 </template>
 
@@ -8,12 +9,13 @@
 import axios from 'axios';
 import { mapActions, mapGetters } from 'vuex';
 
+import ListingCard from "@/components/ListingCard";
+
 export default {
   name: 'Listings',
 
-  data() {
-    return {
-    }
+  components: {
+    ListingCard
   },
 
   beforeMount() {
@@ -21,6 +23,10 @@ export default {
   },
 
   methods: {
+    ...mapGetters([
+      'getListings'
+    ]),
+
     ...mapActions([
       'retrieveListingsFromServer'
     ])
