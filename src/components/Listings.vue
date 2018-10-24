@@ -6,33 +6,24 @@
 
 <script>
 import axios from 'axios';
+import { mapActions, mapGetters } from 'vuex';
 
 export default {
   name: 'Listings',
+
   data() {
     return {
     }
   },
-  beforeMount() {
-    this.getListings();
-  },
-  methods: {
-    getListings() {
-      axios
-        .get("https://tiny-house-exchange-service.herokuapp.com/homes")
-        .then(response => {
-          console.log('responseeeee', response.data);
 
-          return response.data;
-        })
-        .catch(error => {
-          console.log(error);
-        })
-    }
+  beforeMount() {
+    this.retrieveListingsFromServer();
+  },
+
+  methods: {
+    ...mapActions([
+      'retrieveListingsFromServer'
+    ])
   }
 }
 </script>
-
-<style scoped>
-
-</style>
