@@ -6,11 +6,18 @@
   align-items: center;
 
   .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .nav-link {
       font-weight: 700;
-      font-size: 1.1em;
+      font-size: 1em;
       margin: 0px 30px;
       color: $lightprimary;
+    }
+
+    .nav-logo {
+      height: 42px;
     }
   }
 }
