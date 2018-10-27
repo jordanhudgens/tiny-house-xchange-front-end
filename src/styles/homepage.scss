@@ -1,1 +1,14 @@
-// Homepage styles
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  grid-gap: 100px;
+
+  .left-column {
+    background-color: $offwhite;
+  }
+
+  .right-column {
+    height: 100vh;
+    background-color: $secondary;
+  }
+}

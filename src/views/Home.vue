@@ -1,6 +1,12 @@
 <template>
-  <div class="home">
-    <Listings />
+  <div class="grid-layout">
+    <div class="left-column">
+      <Listings />
+    </div>
+
+    <div class="right-column">
+      Sidebar listings
+    </div>
   </div>
 </template>
 
