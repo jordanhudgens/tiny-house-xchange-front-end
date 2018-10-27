@@ -2,7 +2,9 @@
   <div>
     <div class="card-block">
       <div class="metadata">
-        {{ name }}
+        <h2>
+          {{ name }}
+        </h2>
       </div>
     </div>
   </div>

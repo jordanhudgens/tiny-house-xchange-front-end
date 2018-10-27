@@ -6,5 +6,9 @@
 
   .metadata {
     padding: 42px;
+
+    h2 {
+      color: $secondary;
+    }
   }
 }
