@@ -11,9 +11,5 @@ export default {
   props: {
     name: String
   },
-
-  mounted() {
-    console.log("in listing card", this.listings)
-  }
 }
 </script>
