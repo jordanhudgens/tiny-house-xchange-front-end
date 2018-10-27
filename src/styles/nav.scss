@@ -1,8 +1,16 @@
 .nav {
-  height: 42px;
+  height: 80px;
   background-color: $darkbackground;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  a {
-    color: $lightprimary;
+  .nav-links {
+    .nav-link {
+      font-weight: 700;
+      font-size: 1.1em;
+      margin: 0px 30px;
+      color: $lightprimary;
+    }
   }
 }
