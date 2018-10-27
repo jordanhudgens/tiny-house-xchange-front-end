@@ -1,1 +1,10 @@
 // Mixins styles
+@mixin card {
+  background-color: white;
+  border-radius: 8px;
+  margin: 42px;
+
+  .metadata {
+    padding: 42px;
+  }
+}

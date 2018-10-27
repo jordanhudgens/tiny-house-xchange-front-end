@@ -1,6 +1,10 @@
 <template>
   <div>
-    {{ name }}
+    <div class="card-block">
+      <div class="metadata">
+        {{ name }}
+      </div>
+    </div>
   </div>
 </template>
 
