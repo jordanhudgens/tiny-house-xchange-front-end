@@ -12,6 +12,10 @@
 import axios from 'axios';
 import { mapActions, mapGetters } from 'vuex';
 
+// TODO
+// Build out full auth system, starting with ensuring that the store is working
+// And combine the registration component into an auth component
+
 import ListingCard from "@/components/ListingCard";
 
 export default {
